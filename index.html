@@ -1,0 +1,596 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stabilimento balneare Lido Mojito a Isola di Capo Rizzuto. Ristorante, pizzeria, cocktail bar direttamente sulla spiaggia dell'Area Marina Protetta. Prenota il tuo ombrellone.">
+  <meta name="keywords" content="Lido Mojito, Capo Rizzuto, ristorante spiaggia, pizzeria Capo Rizzuto, stabilimento balneare Calabria, prenota ombrellone">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lido Mojito | Bar Ristorante Pizzeria a Capo Rizzuto">
+  <meta property="og:description" content="Vivi un'estate da sogno sul mar Ionio. Servizi lido di prima classe, pizze fragranti e cucina mediterranea.">
+  <meta property="og:image" content="mediasys/34.jpg">
+  <meta property="og:url" content="https://www.barmojitocaporizzuto.com/">
+  
+  <title>Lido Mojito Capo Rizzuto | Bar Ristorante Pizzeria</title>
+  
+  <!-- Favicon ad Alta Risoluzione -->
+  <link rel="icon" type="image/png" sizes="32x32" href="mediasys/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="mediasys/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="mediasys/favicon/favicon.ico">
+  
+  <!-- Fogli di stile locali -->
+  <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/vendor/leaflet.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Float Widget WhatsApp -->
+  <a href="https://wa.me/393299787155?text=Ciao%20vorrei%20ricevere%20informazioni%20sulle%20prenotazioni!" 
+     target="_blank" rel="noopener noreferrer" class="whatsapp-widget" aria-label="Contattaci su WhatsApp">
+     <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.45c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.13.16 1.76 2.68 4.25 3.76.59.26 1.05.41 1.41.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <img src="mediasys/logo/mojito_logo_transparent.png" alt="Lido Mojito Logo">
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">Chi siamo</a>
+        <a href="booking.html" class="nav-link">Lido</a>
+        <a href="restaurant-bar.html" class="nav-link">Menù bar</a>
+        <a href="restaurant-pizza.html" class="nav-link">Pizzeria</a>
+        <a href="workwithus.html" class="nav-link">Lavora con noi</a>
+        <a href="contact.html" class="nav-link">Contatti</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="tel:3299787155" class="nav-phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          329 978 7155
+        </a>
+        <a href="booking.html" class="btn btn-primary">Prenota ora</a>
+      </div>
+
+      <button class="menu-btn" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">Chi siamo</a>
+      <a href="booking.html" class="mobile-nav-link">Lido</a>
+      <a href="restaurant-bar.html" class="mobile-nav-link">Menù bar</a>
+      <a href="restaurant-pizza.html" class="mobile-nav-link">Pizzeria</a>
+      <a href="workwithus.html" class="mobile-nav-link">Lavora con noi</a>
+      <a href="contact.html" class="mobile-nav-link">Contatti</a>
+    </nav>
+    </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Slider -->
+    <section class="hero">
+      <div class="hero__slider swiper js-hero-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide hero__slide">
+            <div class="hero__bg">
+              <img src="mediasys/34.jpg" alt="Spiaggia di giorno Lido Mojito" class="zoomable">
+            </div>
+            <div class="hero__content">
+              <span class="hero__subtitle">Benvenuti al lido</span>
+              <h1 class="hero__title">Un'oasi di relax firmata <span>Mojito</span></h1>
+              <div class="hero__actions">
+                <a href="booking.html" class="btn btn-primary">Spiaggia e prenotazioni</a>
+                <a href="about.html" class="btn btn-secondary-light">Scopri di più</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide hero__slide">
+            <div class="hero__bg">
+              <img src="mediasys/33.jpg" alt="Ristorazione in riva al mare" class="zoomable">
+            </div>
+            <div class="hero__content">
+              <span class="hero__subtitle">Sapori del Mediterraneo</span>
+              <h1 class="hero__title">Cucina raffinata con <span>vista mare</span></h1>
+              <div class="hero__actions">
+                <a href="restaurant-bar.html" class="btn btn-primary">Menù bar</a>
+                <a href="restaurant-pizza.html" class="btn btn-secondary-light">La pizzeria</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide hero__slide">
+            <div class="hero__bg">
+              <img src="mediasys/30.jpg" alt="Tramonto mozzafiato sullo Ionio" class="zoomable">
+            </div>
+            <div class="hero__content">
+              <span class="hero__subtitle">Un tramonto unico</span>
+              <h1 class="hero__title">Cocktail e sorrisi con <span>vista Ionio</span></h1>
+              <div class="hero__actions">
+                <a href="booking.html" class="btn btn-primary">Prenota il tuo lettino</a>
+                <a href="contact.html" class="btn btn-secondary-light">Contatti</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Paginazione -->
+        <div class="swiper-pagination"></div>
+        <!-- Frecce Navigazione -->
+        <div class="slider-prev"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg></div>
+        <div class="slider-next"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+    </section>
+
+    <!-- Presentazione Lido -->
+    <section class="section">
+      <div class="container presentation" data-anim-reveal>
+        <div class="logo-separator">
+          <img src="mediasys/logo/mojito_logo_dark_transparent.png" alt="Mojito Logo Ufficiale">
+        </div>
+        <h2>Capo Rizzuto: il tuo angolo di paradiso sul mare</h2>
+        <p>
+          Capo Rizzuto, autentico promontorio sullo Jonio calabrese, incanta con il suo alternarsi di scogliere selvagge, 
+          calette dai toni dorati e acque che sfumano dall’azzurro al verde smeraldo; qui si staglia l’Area Marina Protetta 
+          più estesa d’Italia, con fondali ricchi di posidonia, pesci multicolori e coste di rara bellezza.
+        </p>
+        <p>
+          Alle spalle di questo scenario naturale unico, il Bar Pizzeria Lido Mojito vi accoglie con un’atmosfera calda e cordiale. 
+          Offriamo colazioni rinfrescanti, gustose pizze artigianali, ricchi panini, cocktail firmati ed un 
+          servizio spiaggia attento ad ogni vostra esigenza. Il posto perfetto in cui il sapore incontra la brezza del mare.
+        </p>
+        <a href="about.html" class="btn btn-secondary" style="margin-top: 2rem;">Scopri chi siamo</a>
+      </div>
+    </section>
+
+    <!-- Atmosphere Cards -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-title">
+          <h2>L'esperienza Mojito</h2>
+        </div>
+        <div class="grid-cards">
+          <!-- Card 1 -->
+          <div class="atmos-card" data-anim-reveal>
+            <div class="atmos-card__media">
+              <img src="mediasys/63.jpg" alt="Cocktail bar lido">
+            </div>
+            <div class="atmos-card__content">
+              <div class="atmos-card__header">
+                <div class="atmos-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 22h8M12 11v11M19 3l-7 8-7-8h14z"/></svg>
+                </div>
+                <h3 class="atmos-card__title">Cocktail bar</h3>
+              </div>
+              <p class="atmos-card__text">Cocktail rinfrescanti, spremute fresche e un'ottima caffetteria direttamente sul bagnasciuga.</p>
+              <a href="restaurant-bar.html" class="btn btn-secondary-light btn-sm">Consulta menù</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="atmos-card" data-anim-reveal>
+            <div class="atmos-card__media">
+              <img src="mediasys/74.jpg" alt="Pizze artigianali Lido Mojito">
+            </div>
+            <div class="atmos-card__content">
+              <div class="atmos-card__header">
+                <div class="atmos-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l10 18H2L12 2z"/><circle cx="12" cy="14" r="1.5" fill="currentColor"/><circle cx="8" cy="17" r="1" fill="currentColor"/><circle cx="15" cy="17" r="1" fill="currentColor"/></svg>
+                </div>
+                <h3 class="atmos-card__title">La pizzeria</h3>
+              </div>
+              <p class="atmos-card__text">Pizze artigianali e croccanti preparate con i migliori ingredienti del nostro territorio.</p>
+              <a href="restaurant-pizza.html" class="btn btn-secondary-light btn-sm">Consulta pizze</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="atmos-card" data-anim-reveal>
+            <div class="atmos-card__media">
+              <img src="mediasys/56.jpg" alt="Ombrelloni e lettini sulla spiaggia">
+            </div>
+            <div class="atmos-card__content">
+              <div class="atmos-card__header">
+                <div class="atmos-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M12 2a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9z"/><path d="M12 12c-3 0-5 3-5 5"/></svg>
+                </div>
+                <h3 class="atmos-card__title">Lo stabilimento</h3>
+              </div>
+              <p class="atmos-card__text">Lettini confortevoli ed ombrelloni distanziati per garantire riservatezza ed un relax esclusivo.</p>
+              <a href="booking.html" class="btn btn-primary btn-sm">Prenota posto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- I Nostri Servizi Completi (Icone Aggiornate su misura) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>I nostri servizi</h2>
+        </div>
+        <div class="services-grid">
+          <!-- Servizio 1: Wi-Fi -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+            </div>
+            <h3 class="service-card__title">Wi-Fi</h3>
+            <p class="service-card__desc">Connessione wireless gratuita accessibile da ogni ombrellone della struttura.</p>
+            <span class="badge-wip">In attivazione</span>
+          </div>
+
+          <!-- Servizio 2: Noleggio ombrelloni e lettini -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M12 2a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9z"/></svg>
+            </div>
+            <h3 class="service-card__title">Noleggio ombrelloni &amp; lettini</h3>
+            <p class="service-card__desc">Noleggio giornaliero, settimanale o stagionale con attrezzature moderne e confortevoli.</p>
+          </div>
+
+          <!-- Servizio 3: Doccia fredda con testina erogatrice -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h4a4 4 0 0 1 4 4v2"/>
+                <path d="M7 10h10l-2 4H9l-2-4z"/>
+                <path d="M9 18v1M12 17v2M15 18v1M10 21v1M14 21v1"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Doccia fredda &amp; servizi</h3>
+            <p class="service-card__desc">Docce rinfrescanti gratuite e servizi igienici sempre curati e igienizzati.</p>
+          </div>
+
+          <!-- Servizio 4: Doccia calda -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/><path d="M12 14v4"/></svg>
+            </div>
+            <h3 class="service-card__title">Doccia calda</h3>
+            <p class="service-card__desc">Cabine doccia con acqua calda riscaldata per un comfort totale dopo il bagno.</p>
+            <span class="badge-wip">In arrivo</span>
+          </div>
+
+          <!-- Servizio 5: Fasciatoio per neonati (Bimbo in fasce) -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="6.5" r="3"/>
+                <path d="M8 12c0-1.5 1.5-2.5 4-2.5s4 1 4 2.5v4c0 3-1.8 4.5-4 4.5s-4-1.5-4-4.5v-4z"/>
+                <path d="M8.5 13l7 4.5M15.5 13l-7 4.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Fasciatoio per neonati</h3>
+            <p class="service-card__desc">Spazio nursery riservato e confortevole pensato per le famiglie con bimbi piccoli.</p>
+            <span class="badge-wip">In arrivo</span>
+          </div>
+
+          <!-- Servizio 6: Ordina all'ombrellone (Cloche da portata) -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="4.5" r="1.5"/>
+                <path d="M4 16a8 8 0 0 1 16 0"/>
+                <line x1="2" y1="19" x2="22" y2="19"/>
+                <path d="M3 16h18"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Servizio all'ombrellone</h3>
+            <p class="service-card__desc">Ordina drink, snack e piatti freddi comodamente dal lettino tramite QR code.</p>
+          </div>
+
+          <!-- Servizio 7: Accessibilità Universale (Simbolo Uomo in cerchio) -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9.5"/>
+                <circle cx="12" cy="7.5" r="1.8" fill="currentColor"/>
+                <path d="M6 10.8l6 1.4 6-1.4"/>
+                <path d="M12 12.2v3.3l-2.6 3.5M12 15.5l2.6 3.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Accessibilità &amp; sedia JOB</h3>
+            <p class="service-card__desc">Sedia speciale per persone a mobilità ridotta ed accesso facilitato alla spiaggia.</p>
+          </div>
+
+          <!-- Servizio 8: Noleggio canoe (Canoa e pagaie incrociate) -->
+          <div class="service-card" data-anim-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 13.5c3 3 15 3 18 0-3-1.8-15-1.8-18 0z"/>
+                <line x1="5" y1="6" x2="19" y2="18"/>
+                <line x1="19" y1="6" x2="5" y2="18"/>
+                <path d="M4 4.5l2.5 2.5M17.5 18l2.5 2.5M17.5 4.5l2.5 2.5M4 18l2.5 2.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Noleggio canoe</h3>
+            <p class="service-card__desc">Esplora le acque limpide dell'Area Marina Protetta con le nostre canoe a noleggio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galleria Media (Formidabile Esperienza con Animazioni Foto) -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-title">
+          <h2>Una formidabile esperienza</h2>
+        </div>
+        <div class="experience-carousel swiper js-experience-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="media-card">
+                <video autoplay muted loop playsinline>
+                  <source src="mediasys/5.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="media-card">
+                <video autoplay muted loop playsinline>
+                  <source src="mediasys/6.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="media-card">
+                <img src="mediasys/images/lido_terrazza_panoramica.jpg" alt="Lido Mojito terrazza sul mare" class="zoomable">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="media-card">
+                <img src="mediasys/images/lido_struttura_tramonto.jpg" alt="Struttura Mojito illuminata al tramonto" class="zoomable">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="media-card">
+                <img src="mediasys/images/lido_spiaggia_drone_sole.jpg" alt="Vista aerea della spiaggia del Mojito" class="zoomable">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="media-card">
+                <img src="mediasys/images/capo_rizzuto_tramonto_mare.jpg" alt="Tramonto dorato sul mare di Capo Rizzuto" class="zoomable">
+              </div>
+            </div>
+          </div>
+          <div class="js-exp-pagination swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Dicono di noi</h2>
+        </div>
+        <div class="testimonial-slider swiper js-testimonials-slider">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide testimonial-slide">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                “Ho provato la pizza al lido Mojito sulla spiaggia e devo dire che è stata un'esperienza incredibile. 
+                La vista sul mare è mozzafiato e la pizza è cotta alla perfezione. Il personale è stato molto gentile 
+                e accogliente. Consiglio vivamente di provare questo posto.”
+              </p>
+              <span class="testimonial-author">Alma — Recensioni Google</span>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide testimonial-slide">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                “Lido piacevole, rilassante e ben fornito di gelati, bibite e patatine. Ideale anche per fare aperitivi 
+                e pranzi veloci. Si può venire a mangiare anche la sera la pizza o altro. Posizione centrale. Suggerito!”
+              </p>
+              <span class="testimonial-author">Delia Cardone — Recensioni Google</span>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide testimonial-slide">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                “La posizione è fantastica, perfetta per godersi una serata rilassante con vista mare. Il personale è 
+                cordiale, educato e attento alle richieste. Il locale è pulito e ben curato, il che rende l'atmosfera 
+                ancora più piacevole. Consigliato!”
+              </p>
+              <span class="testimonial-author">Michele Martinelli — Recensioni Google</span>
+            </div>
+          </div>
+          <div class="swiper-button-prev" style="color: var(--color-green-primary);"></div>
+          <div class="swiper-button-next" style="color: var(--color-green-primary);"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Grid Section -->
+    <section class="section section--dark" style="padding-bottom: 0;">
+      <div class="container text-center" style="margin-bottom: 3rem;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Seguici su Instagram</h2>
+        <a href="https://www.instagram.com/bar_mojito_di_procopio_michele" target="_blank" rel="noopener noreferrer" style="color: var(--color-gold-sand); font-weight: 500; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 0.5rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @bar_mojito_di_procopio_michele
+        </a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0;">
+        <a href="https://www.instagram.com/reel/C8xIhf0tcqJ/" target="_blank" rel="noopener" class="media-card" style="border-radius: 0; aspect-ratio: 1/1;">
+          <img src="mediasys/insta/insta_1.jpeg" alt="Instagram post 1">
+        </a>
+        <a href="https://www.instagram.com/p/C-A5v_3NEpg/" target="_blank" rel="noopener" class="media-card" style="border-radius: 0; aspect-ratio: 1/1;">
+          <img src="mediasys/insta/insta_2.jpeg" alt="Instagram post 2">
+        </a>
+        <a href="https://www.instagram.com/p/Cvq7iifIenU/" target="_blank" rel="noopener" class="media-card" style="border-radius: 0; aspect-ratio: 1/1;">
+          <img src="mediasys/insta/insta_3.jpeg" alt="Instagram post 3">
+        </a>
+        <a href="https://www.instagram.com/bar_mojito_di_procopio_michele" target="_blank" rel="noopener" class="media-card" style="border-radius: 0; aspect-ratio: 1/1;">
+          <img src="mediasys/insta/insta_4.jpg" alt="Instagram post 4">
+        </a>
+        <a href="https://www.instagram.com/bar_mojito_di_procopio_michele" target="_blank" rel="noopener" class="media-card" style="border-radius: 0; aspect-ratio: 1/1;">
+          <img src="mediasys/insta/insta_5.png" alt="Instagram post 5">
+        </a>
+        <a href="https://www.instagram.com/bar_mojito_di_procopio_michele" target="_blank" rel="noopener" class="media-card" style="border-radius: 0; aspect-ratio: 1/1;">
+          <img src="mediasys/insta/insta_6.png" alt="Instagram post 6">
+        </a>
+      </div>
+    </section>
+
+    <!-- Mappa & Dove Siamo -->
+    <section class="section" style="padding-bottom: 0;">
+      <div class="container" style="margin-bottom: var(--space-md);">
+        <div class="contact-grid">
+          <div class="contact-info" data-anim-reveal>
+            <div>
+              <h2 style="font-size: 2.8rem; margin-bottom: 1.5rem;">Vieni a trovarci</h2>
+              <p style="color: rgba(18, 34, 35, 0.75); margin-bottom: 2rem;">Siamo situati direttamente sulla Spiaggia Grande di Capo Rizzuto, nel cuore dell'Area Marina Protetta dello Jonio calabrese.</p>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3 class="contact-item__title">Indirizzo</h3>
+                <p class="contact-item__text">Spiaggia Grande, 88841 Capo Rizzuto,<br>Isola di Capo Rizzuto - Crotone (KR)</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h3 class="contact-item__title">Email</h3>
+                <a href="mailto:barmojito.icr@gmail.com" class="contact-item__text" style="text-decoration: underline;">barmojito.icr@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h3 class="contact-item__title">Telefono</h3>
+                <p class="contact-item__text">Michele: 329 978 7155<br>Info &amp; lido: 388 499 9244</p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <div id="osm-map" class="map-container"></div>
+            <div style="text-align: right; margin-top: 1rem;">
+              <a href="https://www.google.com/maps/search/?api=1&query=Bar+Pizzeria+Lido+Mojito,+88841+Capo+Rizzuto+KR" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Apri in navigatore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="mediasys/logo/mojito_logo_transparent.png" alt="Lido Mojito">
+        </div>
+        <div class="footer-sublogo">di Procopio Michele</div>
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Un'accoglienza calorosa, cibo di qualità ed una vista spettacolare sul Mar Ionio. La tua vacanza ideale a Capo Rizzuto.</p>
+      </div>
+      
+      <div>
+        <h3 class="footer-title">Link rapidi</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Chi siamo</a></li>
+          <li><a href="booking.html">Il lido / Prenotazioni</a></li>
+          <li><a href="restaurant-bar.html">Menù ristorante bar</a></li>
+          <li><a href="restaurant-pizza.html">Pizzeria</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contatti</h3>
+        <ul class="footer-links">
+          <li><a href="tel:3299787155">Tel. 329 978 7155</a></li>
+          <li><a href="tel:3884999244">Tel. 388 499 9244</a></li>
+          <li><a href="mailto:barmojito.icr@gmail.com">barmojito.icr@gmail.com</a></li>
+          <li><a href="contact.html">Invia un messaggio</a></li>
+          <li><a href="workwithus.html">Lavora con noi</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Orari stabilimento</h3>
+        <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.95rem; margin-bottom: 1rem;">
+          <strong>Spiaggia &amp; lido:</strong><br>
+          Tutti i giorni: 08:00 – 19:30
+        </p>
+        <p style="color: rgba(255, 255, 255, 0.85); font-size: 0.95rem;">
+          <strong>Ristorante bar pizzeria:</strong><br>
+          Tutti i giorni: 07:00 – 01:00
+        </p>
+        <div class="social-links" style="margin-top: 1.5rem;">
+          <a href="https://www.facebook.com/bar.ristorante.mojito/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/bar_mojito_di_procopio_michele" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-flex">
+      <div>
+        Copyright &copy; 2026 Lido Mojito Capo Rizzuto. Tutti i diritti riservati.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="terms.html">Termini e condizioni</a>
+        <a href="policy.html">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script locali self-hosted -->
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <script src="js/vendor/leaflet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
